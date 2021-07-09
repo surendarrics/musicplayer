@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music player</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main>
+        <div class="box">
+       
+            <img id="track_image" src="./images/major.jpg" alt="image"/>
+        
+            <div class="button">
+                <button class="prev" onclick="previous_song()"> <i class="fa fa-caret-left" aria-hidden="true"> </i></button>
+                <button class="play" onclick="just_play()"><i class="fa fa-play" aria-hidden="true"></i> </button>
+                <button class="next" onclick="next_song()"><i class="fa fa-caret-right" aria-hidden="true"></i> </button>
+           
+            </div>
+            <input type="range" min="0" max="100" id="duration_slider" class="slider" value="0" onchange="change_duration()" /> 
+        <div class="artist">
+            <h4 class="song">Lean on</h4>
+            <p class="by">Major lazer ft.djsnake</p>
+        </div>
+        
+    </div>
+    </main>
+    
+</body>
+
+<footer>
+    <p>Originally designed by <a href="https://www.instagram.com/surendarrics/"><i>Surendarrics</i></a></p>
+</footer>
+<script src="app.js"></script>
+</html>
